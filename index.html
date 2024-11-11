@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <header>
+        
+        <img class="logo" src="./assets/logo.svg" alt="Logo de 3 corazones de alura geek">
+            
+    </header>
+    <main>
+        <div class="main__container">
+            <section class="seccion__productos main__section" >
+                <h2>MIS PRODUCTOS:</h2>
+                <div class="productos__container">
+                    <ul class="productos__lista" data-lista>
+                        
+                        
+                    </ul>
+                </div>
+
+            </section>
+            <section class="seccion__formulario main__section" >
+                <form class="formulario" data-formulario>
+                    <h2>AGREGAR <br> PRODUCTO:</h2>
+                    <input type="text" class="form__input" placeholder="Nombre..."  data-nombre>
+                    <input type="text" class="form__input" placeholder="Precio..." data-precio>
+                    <input type="text" class="form__input" placeholder="Imagen..." data-imagen>
+                    <div class="button__box">
+                        <button class="btn__oscuro" id="enviar_btn" type="submit">Enviar</button>
+                        <button class="btn__claro" id="limpiar_btn">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <ul class="Logo__container">
+            <li>
+                <img class="logo" src="./assets/logo.svg" alt="Logo de 3 corazones de alura geek">
+            </li> 
+            <li class="list__item">Desarrollado por Marlon Almanza</li>
+            <li class="list__item">Oracle Next Education 2024</li>
+        </ul>
+    </footer>
+    <script src="./js/listarProductos.js" type="module"></script>
+    <script src="./js/crearProducto.js" type="module"></script>
+</body>
+</html>

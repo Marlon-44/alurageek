@@ -1,0 +1,40 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Stormtrooper",
+      "precio": 100,
+      "imagen": "https://i.pinimg.com/564x/2e/00/d2/2e00d2ca296ca7c3b2d7ab2d11e27ef6.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "AONIC 50",
+      "precio": 200,
+      "imagen": "https://i.pinimg.com/564x/3f/52/c4/3f52c401834f11b424fa83a6c493702d.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "Hifiman",
+      "precio": 300,
+      "imagen": "https://i.pinimg.com/564x/fe/08/49/fe0849e6664aec453e00dc36e9d2fdce.jpg"
+    },
+    {
+      "id": "4",
+      "nombre": "Denon",
+      "precio": 400,
+      "imagen": "https://i.pinimg.com/564x/7d/82/f2/7d82f234b385debff991a175e049991f.jpg"
+    },
+    {
+      "id": "5",
+      "nombre": "T+A",
+      "precio": 500,
+      "imagen": "https://i.pinimg.com/564x/5c/97/56/5c97567e4285a5010718ce3e3a1f06cd.jpg"
+    },
+    {
+      "id": "9795",
+      "nombre": "Feenix aria",
+      "precio": "300",
+      "imagen": "https://i.pinimg.com/564x/fb/b8/81/fbb8815bd430887c582204768ae17e7b.jpg"
+    }
+  ]
+}

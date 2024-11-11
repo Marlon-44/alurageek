@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Math&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header, footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #5300C8;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    
+}
+ul .list__item{
+    font-family: IBM Plex Mono;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+footer{
+    bottom: 0;
+    position: relative;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 30px;
+    gap: 60px;
+    width: 100vw;
+    flex: 1;
+
+}
+.main__section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+.main__section h2{
+    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.seccion__productos{
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.form__input{
+    font-family: IBM Plex Mono;
+    width: 350px;
+    height: 58px;
+    border: 3px solid #03318C;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form__input::placeholder{
+    font-family: IBM Plex Mono;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #03318C;
+}
+.button__box button{
+    width: 164px;
+    height: 55px;
+    border: 2px solid #03318C;
+    border-radius: 15px;
+}
+.button__box button:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+.btn__oscuro{
+    background-color: #03318C;
+    color: #FFFFFF;
+}
+.btn__oscuro:hover{
+    background-color: #001745;
+    cursor: pointer;
+}
+.btn__claro{
+    background-color: #FFFFFF;
+    color: #03318C;
+}.btn__claro:hover{
+    background-color: #dedede;
+}
+.list__item{
+    color: #FFFFFF;
+}
+.logo{
+    width: 300px;
+}
+/*estilos para la seccion de cards*/
+.productos__container{
+    display: flex;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.productos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.producto__item{
+    display: flex;
+    flex-direction: column;
+    width: 155px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #5D04D9;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    color: #FFFFFF;
+    font-family: "IBM Plex Mono", sans-serif;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.73);
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.card__imagen{
+    width: 100%;
+    align-self: center;
+    border-radius: 10px;
+
+}
+.card__icono:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    filter: invert(35%) sepia(94%) saturate(3663%) hue-rotate(346deg) brightness(94%) contrast(120%);
+
+}
+
+.card--price-delete{
+    display: flex;
+    justify-content: space-between;
+
+}
+.card--price-delete p,button, h3{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "IBM Plex Mono", sans-serif;
+}
+
+/* Contenedor del scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra vertical */
+    height: 12px; /* Altura de la barra horizontal (si la necesitas) */
+}
+
+/* Track (fondo de la barra de scroll) */
+::-webkit-scrollbar-track {
+    background: #ffffff; /* Color del track de la barra */
+    border-radius: 10px; /* Radio para esquinas redondeadas */
+}
+
+/* Thumb (parte que se mueve en la barra) */
+::-webkit-scrollbar-thumb {
+    background-color: #5300c843; /* Color del "thumb" */
+    border-radius: 10px; /* Esquinas redondeadas */
+    border: 2px solid #f1f1f1; /* Espacio entre el thumb y el track */
+}
+
+/* Thumb cuando se interactúa (hover) */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color al pasar el mouse sobre el thumb */
+}
+
+@media screen and (min-width: 768px){
+    .main__container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 200px);
+        align-items: start;
+    }
+    .main__section{
+        min-height: 100%;
+    }
+    .seccion__productos{
+        height: 100%;
+    }
+    .productos__container{
+        height: 100%;
+        overflow: hidden;
+    }
+    footer{
+        bottom: 0;
+        position: absolute;
+    }
+}
